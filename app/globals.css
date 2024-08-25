@@ -11,6 +11,7 @@
   --secondary-bg: #758694;
   --tertiary-bg: #405D724D;
   --text-color: #FFF8F3;
+  --test: #405D72;
 }
 
 body {
@@ -22,6 +23,10 @@ li {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
+}
+
+li {
+  cursor: pointer;
 }
 
 a {

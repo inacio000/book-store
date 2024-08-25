@@ -108,6 +108,8 @@ export default function Card() {
         setTagsVisible(!tagsVisible);
     }
 
+    const total = books.reduce((sum, book) => sum + parseFloat(book.price), 0);
+
     return (
         <>
             <Container className="flex justify-between px-4 py-3">
@@ -227,7 +229,7 @@ export default function Card() {
 
                 <div>
                     <h1>
-                        <span className='font-extrabold'>TOTAL</span>: 2678$
+                        <span className='font-extrabold'>TOTAL</span>: {total.toFixed(2)}$
                     </h1>
                 </div>
             </Container>
